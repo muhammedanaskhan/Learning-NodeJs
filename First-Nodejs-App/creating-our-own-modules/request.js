@@ -12,6 +12,6 @@ function send(url, data){
 // to use funcs in other modules
 //module = Global built-in that contains data related to current module
 
-module.exports = {
+export default {
     send,
-}
+} 

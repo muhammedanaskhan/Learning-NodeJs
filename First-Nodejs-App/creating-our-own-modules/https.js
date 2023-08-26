@@ -3,12 +3,12 @@
 // this fun allows to make a request 
 // we'll break out the details of request & response into seperate files
 
-const request = require('./request');
-const response = require('./response');
+import { send } from './request';
+import { read } from './response';
 
 function makeRequest(url, data){
-    request.send(url, data)
-    return response.read();
+    send(url, data)
+    return read();
 }
 
 makeRequest('https://google.com', 'hello')
